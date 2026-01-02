@@ -84,11 +84,11 @@ func main() {
 
 	testInvalidIds = getInvalidIds(testData, checkMultipleOccurrence)
 	if len(testInvalidIds) != 13 {
-		log.Fatalf("FAIL solution 2: expected 4, got %d", testInvalidIds)
+		log.Fatalf("FAIL solution 2: expected 13, got %d", testInvalidIds)
 	}
 	testSum = sumInvalidIds(testInvalidIds)
 	if testSum != 4174379265 {
-		log.Fatalf("FAIL solution 2: expected 1227775554, got %d", testSum)
+		log.Fatalf("FAIL solution 2: expected 4174379265, got %d", testSum)
 	}
 
 	timer.LapAndLog("Test 2 Done")
